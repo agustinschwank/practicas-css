@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejersicio de prueba basico HTML / CSS 2</title>
+        <link rel="icon" type="img/png" href="./assets/img/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <!-- CABECERA DEL SITIO -->
+        <header id="header">
+            <div class="logotipo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/1200px-CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="logotipo" />
+            </div>
+            <h1><a href="#">Prueba basica HTML/CSS</a></h1>
+        </header>
+        <!-- END CABECERA DEL SITIO-->
+        <!-- NAVEGACION -->
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a>
+                    <ul>
+                        <li><a href="#">Front-End</a></li>
+                        <li><a href="#">Back-End</a></li>
+                        <li><a href="#">Profesores</a></li>
+                        <li><a href="#">Alumnado</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Cursos</a>
+                    <ul>
+                        <li><a href="#">Html & CSS</a></li>
+                        <li><a href="#">Frameworks CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Node.js & React</a></li>
+                        <li><a href="#">Otros Lenguajes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- END NAVEGACION -->
+        <!-- CONTENIDO PRINCIPAL -->
+        <div id="main">
+            <!-- BARRA LATERAL -->
+            <aside id="aside">
+                <!-- Login Web -->
+                <div id="login" class="widget">
+                    <h3>Acceso WEB</h3>
+                    <form>
+                        <label for="user">Usuario</label>
+                        <input type="text" name="user" />
+
+                        <label for="paswords">Contraseña</label>
+                        <input type="password" name="password" />
+
+                        <input type="submit" value="Ingresar">
+                    </form>
+                    <a href="#">Area Alumnos</a>
+                    <a href="#">Area Profesores</a>
+                    <a href="#">Calificaciones</a>
+                </div>
+
+                <!-- Aula Virtual 1 -->
+                <div id="aula" class="widget">
+                    <h3 class="blue">Aula Virtual 1</h3>
+                    <form>
+                        <label for="user">Usuario</label>
+                        <input type="text" name="user" />
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" />
+
+                        <input type="submit" value="Ingresar">
+                    </form>
+                </div>
+
+                <!-- Aula Virtual 2 -->
+                <div id="aula" class="widget">
+                    <h3 class="green">Aula Virtual 2</h3>
+                    <form>
+                        <label for="user">Usuario</label>
+                        <input type="text" name="user" />
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" />
+
+                        <input type="submit" value="Ingresar">
+                    </form>
+                </div>
+
+                <!-- Enlaces de Intereses -->
+                <div id="aula" class="widget">
+                    <h3>Enlaces de Interes</h3>
+                    <ul>
+                        <li><a href="#">Curso de HTML</a></li>
+                        <li><a href="#">Curso de CSS</a></li>
+                        <li><a href="#">Curso de JavaScript</a></li>
+                        <li><a href="#">Curso de PHP</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- END BARRA LATERAL -->
+            
+            <!-- SECCION DE NOTICIAS -->
+            <div id="sections">
+                <section id="frontend">
+                    <span class="sticker">
+                        <img class="sticker__one" src="./assets/img/stiker.png" alt="sticker"/>
+                        <img class="sticker__two" src="./assets/img/stiker.png" alt="sticker"/>
+                    </span>
+                    <h2 class="titulo sandy">Noticias de Front-End</h2>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                </section>
+                <section id="backend">
+                    <span class="sticker">
+                        <img class="sticker__one" src="./assets/img/stiker.png" alt="sticker"/>
+                        <img class="sticker__two" src="./assets/img/stiker.png" alt="sticker"/>
+                    </span>
+                    <h2 class="titulo lgreen">Noticias de Back-End</h2>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                </section>
+                <section id="profesores">
+                    <span class="sticker">
+                        <img class="sticker__one" src="./assets/img/stiker.png" alt="sticker"/>
+                        <img class="sticker__two" src="./assets/img/stiker.png" alt="sticker"/>
+                    </span>
+                    <h2 class="titulo salmon">Noticias de Profesores</h2>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                    <article class="articulo">
+                        <i class="fas fa-book-open"></i>
+                        <p>
+                            <a href="#">Titulo de la Entrada</a>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat autem hic aperiam doloremque voluptatum labore aut natus, quod, itaque tempora commodi vitae cum esse odit optio consequuntur dolorem nostrum provident?
+                        </p>
+                        <span class="date">[12-12-2022 . Agustin Schwank]</span>
+                    </article>
+                </section>
+            </div>
+            <!-- END SECCION DE NOTICIAS -->
+
+            <!-- Frace del Dia -->
+            <aside id="aside">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit quos ducimus consequatur sunt, illo, quo quibusdam nobis maxime deleniti iusto non minima magni qui quasi molestiae. Iste, exercitationem incidunt.</p>
+            </aside>  
+
+        </div>
+        <!-- END CONTENIDO PRINCIPAL -->
+
+        <div class="clearfix"></div>
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <p>Desarrollado por <a href="https://agustinschwank.com.ar">Agustin Schwank</a> 2021</p>
+            <p>&copy; Todos los derechos Reservados</p>
+        </footer>
+        <!-- END FOOTER -->
+    </body>
+</html>

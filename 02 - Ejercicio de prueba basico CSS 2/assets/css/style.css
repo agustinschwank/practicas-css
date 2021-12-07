@@ -1,0 +1,387 @@
+/*
+######### FUENTES #########
+*/
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+    src: url('../fonts/BebasNeue-Regular.ttf?#iefix') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rama Bhadra';
+    src: url('../fonts/Ramabhadra-Regular.ttf');
+    src: url('../fonts/Ramabhadra-Regular.ttf?#iefix') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+######### ESTILOS GLOBALES #########
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+a {
+    color:black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+a:visited {
+    color:red;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* Inputs Form Lateral */
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 0px 4px #cccccc inset;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid blue;
+    box-shadow: 0px 0px 4px blue inset;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: lightcoral;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 6px blue;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: lightsteelblue;
+    box-shadow: 0px 0px 4px blue inset;
+    color: #ffffff;
+}
+
+/* Clases Gobles */
+.blue {
+    color: lemonchiffon !important;
+}
+
+.green {
+    color:lightgreen !important;
+}
+
+.salmon {
+    color: lightsalmon;
+}
+
+.lgreen {
+    color: lightseagreen;
+}
+
+.sandy {
+    color: sandybrown;
+}
+
+/*
+######### ESTILOS CABECERA #########
+*/
+
+#header {
+    min-width: 1200px;
+    width: 100%;
+    height: 220px;
+    margin: 0px auto;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header .logotipo {
+    width: 1200px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+#header .logotipo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 180px;
+}
+
+#header h1 {
+    margin: 15px auto;
+    text-align: center;
+    color: red;
+    font-family: 'Bebas Neue', Arial;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0px 2px 1px #000;
+    transition: all 500ms;
+}
+
+#header h1:hover {
+    text-shadow: 0px 2px 1px #000, 0px 2px 8px red;
+}
+
+/*
+######## BARRA DE NAVEGACION ########
+*/
+
+#menu {
+    background: #000000;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 2px 4px grey;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0px auto;
+    width: 1200px;
+}
+
+#menu > ul > li {
+    display: block;
+    float: left;
+    line-height: 50px;
+    min-width: 130px;
+    text-align: center;
+    border-right: 1px solid grey;
+    transition: all 2s;
+}
+
+#menu > ul > li:first-child {
+    border-left: 1px solid grey;
+}
+
+#menu > ul > li a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+#menu > ul > li:hover {
+    background: red;
+    box-shadow: 0px 0px 10px grey inset;
+    transition: all 500ms;
+}
+
+
+/* BARRA DE NAVEGACION SUBMENU */
+
+#menu ul > li > ul {
+    position: absolute;
+    display: none;
+    width: 200px;
+    z-index: 10;
+    box-shadow: 0px 2px 3px grey;
+}
+
+#menu ul > li:hover > ul {
+    display: block;
+}
+
+#menu ul > li:hover > ul > li {
+    background-color: lightblue;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 40px;
+    transition: all 300ms;
+}
+
+#menu ul > li:hover > ul > li:last-child {
+    border-bottom: none;
+}
+
+#menu ul > li:hover > ul > li:hover {
+    box-shadow: 0px 0px 5px #ccc inset;
+    background: rgb(208, 242, 253);
+}
+
+#menu ul > li:hover > ul > li a {
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+
+/*
+########## MAIN CONTENT ###########
+*/
+
+#main {
+    width: 100%;
+    max-width: 1200px;
+    height: 1300px;
+    margin: 0px auto;
+}
+
+/* ASIDE */
+#aside {
+    background-color: #ffffff;
+    display: block;
+    float: left;
+    width: 250px;
+    margin-top: 30px;
+    box-shadow: 0px 2px 5px #cccccc;
+    margin-right: 30px;
+}
+
+#aside .widget {
+    padding: 10px;
+    margin: 5px auto;
+    border-bottom: 2px dashed grey;
+}
+
+#aside .widget:last-child {
+    border-bottom: none;
+}
+
+#aside .widget h3 {
+    background-color: orangered;
+    border: 2px solid orange;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #ffffff;
+}
+
+/* Formulario Lateral */
+#aside div form label,
+#aside div form input[type="text"],
+#aside div form input[type="password"],
+#aside div a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 92%;
+    text-decoration: none;
+}
+
+#aside div form input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#aside div label,
+#aside div input {
+    margin: 0px auto;
+}
+
+#aside ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+#aside p {
+    padding: 10px;
+    text-indent: 15px;
+}
+
+
+/* SECIONES */
+#sections {
+    display: block;
+    float: right;
+    width: 75%;
+    margin-top: 30px;
+}
+
+#sections section {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 4px #cccccc;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+#sections .titulo {
+    text-align: center;
+    margin-top: -25px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid grey;
+    font-family: 'Rama Bhadra', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#sections .articulo {
+    margin-top: 15px;
+}
+
+#sections .articulo i {
+    float: left;
+    margin-right: 6px;
+    margin-top: 3px;
+    color: slateblue;
+}
+
+#sections .date {
+    color: grey;
+    font-size: 14px;
+}
+
+#sections .sticker__one,
+#sections .sticker__two {
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#sections .sticker__two {
+    margin-left: 820px;
+    z-index: 0;
+}
+
+
+/*
+######## FOOTER #######
+*/
+
+#footer {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+}
