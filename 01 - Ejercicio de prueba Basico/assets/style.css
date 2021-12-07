@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general {
+    margin: 0px auto;
+    border: 1px solid #cccccc;
+    width: 1200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px #cccccc;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-transform: uppercase;
+    background: blue;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/*
+######## MENU ########
+*/
+
+#menu {
+    background-color: #cccccc;
+}
+
+#menu ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    border-right: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+#menu ul li:hover {
+    background-color: darkblue;
+}
+
+#menu ul li a {
+    display: block;
+    font-size: 18px;
+    padding: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-width: 130px;
+    text-align: center;
+}
+
+#menu ul li:hover a {
+    color: red;
+}
+
+.clearflix {
+    float: none;
+    clear: both;
+}
+
+
+/*
+####### PRINCIPAL MAIN #######
+*/
+
+#content, #lateral {
+    float: left;
+}
+
+#content {
+    width: 70%;
+    padding-bottom: 25px;
+}
+
+/* ASIDE */
+#lateral {
+    width: 30%;
+    background: aliceblue;
+    height: 1210px;
+}
+
+#lateral h3 {
+    background-color: #e6e6e6;
+    color: #444444;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#lateral .lateral__cont {
+    padding: 20px;
+}
+
+#lateral p {
+    text-transform: capitalize;
+    text-indent: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* Cajas */
+#content h3 {
+    background-color: #e6e6e6;
+    color: #444444;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    border-right: 1px solid #cccccc;
+}
+
+#content .caja {
+    float: left;
+    background-color: #cccccc;
+    width: 40%;
+    height: 250px;
+    border: 1px solid #cccccc;
+    color: white;
+    margin: 10px;
+    margin-left: 40px;
+    box-shadow: 0px 0px 5px #000;
+    /*box-shadow: 0px 0px 15px blue inset;*/
+    border-radius: 10px;
+}
+
+#content .caja:hover {
+    box-shadow: 0px 0px 15px blue inset;
+}
+
+#content .caja > h2 {
+    text-align: center;
+    line-height: 250px;
+}
+
+
+/*
+###### FOOTER #####
+*/
+
+footer {
+    background-color: #cccccc;
+    color: #444444;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}

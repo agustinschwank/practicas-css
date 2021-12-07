@@ -1,0 +1,759 @@
+/* FUENTES */
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../fonts/WorkSans/WorkSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StaatLiches';
+    src: url('../fonts/Staatliches/Staatliches-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeus/BebasNeue.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebSimbol';
+    src: url('../fonts/WebSimbol/websymbols-regular-webfont.ttf') format('truetype');
+    src: url('../fonts/WebSimbol/websymbols-regular-webfont.eot') format('eot'),
+         url('../fonts/WebSimbol/websymbols-regular-webfont.svg') format('svg'),
+         url('../fonts/WebSimbol/websymbols-regular-webfont.woff') format('woff');
+}
+
+/* ==================================  ESTILOS GENERALES ================================== */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: url('../img/pattern.png');
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    margin: 0px auto;
+    width: 1200px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+/* ================================== ESTILO HEADER + MENU ================================== */
+
+#header {
+    background-color: #000000;
+    width: 100%;
+    height: 70px;
+    color: #ffffff;
+    box-shadow: 0px 0px 8px #919191;
+}
+
+#logo {
+    background-color: #0084ff;
+    float: left;
+    width: 200px;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#logo:hover {
+    border-radius: 10px;
+    background-color: #003f7a
+}
+
+#logo .gear {
+    display: block;
+    float:left;
+    font-size: 25px;
+    line-height: 60px;
+    margin-left: 20px;
+    animation: rotate-gear 2s linear infinite;
+}
+
+@keyframes rotate-gear {
+    from {
+        transform: rotatez(0deg)
+    } to {
+        transform: rotatez(360deg);
+    }
+}
+
+#logo:hover .gear {
+    animation: fromPosition 500ms linear;
+}
+
+@keyframes fromPosition {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+#logo h3 {
+    display: block;
+    float: right;
+    font-family: 'StaatLiches';
+    font-size: 45px;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin-right: 70px;
+}
+
+#logo:hover h3 {
+    animation: logoPosition 500ms linear;
+}
+
+@keyframes logoPosition {
+    from {
+        transform: translateX(200%);
+    } to {
+        transform: translateX(0%);
+    }
+}
+
+/* MENU */
+#menu {
+    float: right;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#menu ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    line-height: 70px;
+    margin: 0px 20px 0px 20px;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#menu ul li a {
+    display: block;
+    color: #ffffff;
+    transition: all 300ms;
+}
+
+#menu ul li a:hover {
+    color: #0084ff;
+    transform: scale(1.2, 1.2);
+}
+
+/* ================================== INFORMACION + BANNER ================================== */
+#banner {
+    width: 98.3%;
+    height: 120px;
+    border: 10px solid #ffffff;
+    box-shadow: 0px 0px 4px grey;
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -140px;
+    margin-top: 30px;
+    animation: backgroundMovie 10s linear;
+    overflow: hidden;
+}
+
+@keyframes backgroundMovie {
+    from {
+        background-position: 0px 0px;
+    } to {
+        background-position: 0px -140px;
+    }
+}
+
+#banner h1 {
+    display: block;
+    margin: 40px auto;
+    color: #ffffff;
+    font-family: 'BebasNeue', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 40px;
+    animation: textMovie 10s linear;
+}
+
+@keyframes textMovie {
+    0% {
+        transform: translateX(-600%) translateY(10%) scale(4,4);
+        opacity: 1;
+    }
+    85% {
+        transform: translateX(600%) translateY(10%) scale(4,4);
+        opacity: 1;
+    }
+    95% {
+        transform: translateX(-600%) scale(4,4);
+        color: transparent;
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%) scale(1,1);
+        color: #ffffff;
+        opacity: 1;
+    }
+}
+
+/* CARDS */
+#cards {
+    margin-top: 10px;
+}
+
+.card {
+    float: left;
+    margin: 20px;
+    width: 206px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px #cccccc;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.card:hover {
+    background-color: #000000;
+}
+
+.card:first-child {
+    margin-left: 0px;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+.card i {
+    font-size: 60px;
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card:hover i {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 90px;
+    color: #0084ff;
+    animation: iconShow 300ms linear;
+}
+
+@keyframes iconShow {
+    from {
+        transform: translateY(-200%);
+    } to {
+        transform: translateY(0%);
+    }
+}
+
+.card .categoria {
+    width: 100%;
+    height: 50px;
+    font-family: 'StaatLiches', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #003f7a;
+    text-align: center;
+}
+
+.card:hover .categoria {
+    color: #ffffff;
+    animation: titleShow 300ms linear;
+}
+
+@keyframes titleShow {
+    from {
+        transform: translateY(-200%);
+        color: #000000;
+    } to {
+        transform: translateY(0%);
+        color: #ffffff;
+    }
+}
+
+.card .descripcion {
+    display: block;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #0084ff;
+}
+
+.card:hover .descripcion {
+    color: #ffffff;
+    font-weight: 600;
+    animation: descriptionShow 400ms linear;
+}
+
+@keyframes descriptionShow {
+    from {
+        transform: translateX(-200%);
+        color: #000000;
+    } to {
+        transform: translateX(0%);
+        color: #ffffff;
+    }
+}
+
+
+/* ================================== ASIDE BARRA LATERAL ================================== */
+#aside {
+    float: right;
+    width: 300px;
+    min-height: 1200px;
+    font-family: 'Ubuntu';
+}
+
+#aside h3 {
+    display: block;
+    padding: 15px;
+    width: auto;
+    height: 20px;
+    line-height: 25px;
+    box-shadow: 0px 1px 0px #000000, 1px 2px 0px #000000, 2px 3px 0px #000000, 3px 4px 0px #000000;
+    background: #cccccc;
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#buscar {
+    margin: 0px auto;
+    width: 90%;
+    height: 35px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px #cccccc inset;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+
+#buscar input[type="text"] {
+    width: 80%;
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    border-right: 1px solid #cccccc;
+    font-size: 22px;
+    padding-left: 10px;
+    background-color: transparent;
+    color: #808080;
+    transition: all 300ms;
+}
+
+#buscar input[type="text"]:focus {
+    color: #303030;
+    outline: none;
+    box-shadow: 0px 0px 4px #0084ff inset;
+}
+
+#buscar input[type='button'] {
+    font-family: 'WebSimbol';
+    font-size: 20px;
+    width: auto;
+    height: 35px;
+    background: transparent;
+    border:none;
+    cursor: pointer;
+    color: #808080;
+    margin-left: 5px;
+}
+
+.aside-box {
+    margin: 0px auto;
+    width: 90%;
+    height: 240px;
+    box-shadow: 0px 1px 4px #cccccc, 1px 2px 5px #cccccc, 1px 3px 6px #cccccc, 2px 4px 8px #cccccc;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+#login {
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+#login input[type='email'],
+#login input[type='password'] {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    height: 35px;
+    font-size: 22px;
+    box-shadow: 0px 0px 4px #cccccc inset;
+    border: 1px solid #cccccc;
+    color: #808080;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+#login input[type='email']:focus,
+#login input[type='password']:focus {
+    color: #303030;
+    outline: none;
+    box-shadow: 0px 0px 4px #0084ff inset;
+}
+
+#login .user, .locked {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #808080;
+}
+
+#login input[type="submit"],
+#login input[type="reset"] {
+    padding: 10px;
+    width: 100px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #0084ff 0%, #1100ff 100%);
+    border: none;
+    box-shadow: 0px 0px 4px #1100ff;
+    cursor: pointer;
+}
+
+#login input[type="submit"]:hover,
+#login input[type="reset"]:hover {
+    color: #000000;
+    background: #01ff80;
+    box-shadow: 0px 0px 4px #01ff80;
+}
+
+#login a {
+    display: block;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#login a:hover {
+    text-decoration: underline;
+    color: #0084ff;
+}
+
+/* Social Networks */
+#redes-sociales {
+    height: 150px;
+}
+
+#redes-sociales div {
+    display: block;
+    float: left;
+    line-height: auto;
+    width: 100%;
+}
+
+#redes-sociales div a {
+    float: left;
+    color: #000000;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#redes-sociales div p {
+    float: left;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 70px;
+    background-color: #003f7a;
+    border-radius: 5px;
+    transform: translateX(-110px);
+    opacity: 0;
+    transition: all 400ms;
+    position: absolute;
+}
+
+#redes-sociales div:hover p {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+/* ================================== SECCION DE ARTICULOS ================================== */
+#articles {
+    float: left;
+    width: 870px;
+}
+#articles h2 {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: auto;
+    height: 30px;
+    line-height: 35px;
+    box-shadow: 0px 1px 0px #000000, 1px 2px 0px #000000, 2px 3px 0px #000000, 3px 4px 0px #000000;
+    background: #cccccc;
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#articles article {
+    width: auto;
+    margin: 0px auto;
+    background-color: #ffffff;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 1px 2px #cccccc;
+}
+
+#articles .date {
+    float: right;
+    margin: 0px auto;
+    background-color: #303030;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-right: -10px;
+    border-radius: 0px 0px 0px 10px;
+    font-family: 'Ubuntu';
+    padding: 5px;
+}
+
+#articles .date span {
+    margin: 5px;
+}
+
+#articles article h3 a {
+    display: block;
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    color: #003f7a;
+    margin: 5px 0px 5px 0px;
+}
+
+#articles article h3 a:hover {
+    text-decoration: underline;
+}
+
+#articles article p {
+    display: block;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#articles article p a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #003f7a;
+}
+
+#articles .blog {
+    background: #ffffff;
+    margin: 40px auto;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 1px 2px #cccccc;
+    overflow: hidden;
+}
+
+#articles .blog:hover {
+    border: 10px solid #cccccc;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px grey;
+    background-color: #474747;
+    animation: blink 10s infinite linear;
+}
+
+@keyframes blink {
+    0% {
+        border: 10px solid #0084ff;
+        box-shadow: 0px 0px 10px #0084ff;
+    }
+    20% {
+        border: 10px solid yellow;
+        box-shadow: 0px 0px 10px yellow;
+    }
+    40% {
+        border: 10px solid blue;
+        box-shadow: 0px 0px 10px blue;
+    }
+    60% {
+        border: 10px solid red;
+        box-shadow: 0px 0px 10px red;
+    }
+    80% {
+        border: 10px solid magenta;
+        box-shadow: 0px 0px 10px magenta;
+    }
+    100% {
+        border: 10px solid #0084ff;
+        box-shadow: 0px 0px 10px #0084ff;
+    }
+}
+
+#articles .blog a {
+    display: block;
+    color: #003f7a;
+    font-family: 'BebasNeue', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#articles .blog a:hover {
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #0084ff, 1px 2px 1px #0084ff, 2px 3px 3px #0084ff, 3px 4px 1px #0084ff, 4px 5px 1px #0084ff;
+}
+
+
+/* ================================== FOOTER ================================== */
+#footer {
+    background: #000000;
+    color: white;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#footer .wrap > div {
+    float: left;
+    width: 28%;
+    height: 500px;
+    font-family: 'BebasNeue';
+    margin: 30px;
+    color: white;
+}
+
+#footer h5 {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 30px;
+    line-height: 35px;
+    background: #cccccc;
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #000000;
+}
+
+#footer__nav ul {
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+#footer__nav ul li {
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+}
+
+#footer__nav ul li:hover {
+    color: #ff0000;
+}
+
+#footer__nav ul li a {
+    display: block;
+    color: #0084ff;
+    transition: all 300ms ;
+}
+
+#footer__nav ul li a:hover {
+    width: 100%;
+    color: #ffffff;
+    margin-left: 50px;
+}
+
+#footer iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+}
+
+#footer__info p {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#footer__info a {
+    color: yellowgreen;
+}
+
+#footer__info a:hover {
+    text-decoration: underline;
+}
