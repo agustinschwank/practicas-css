@@ -1,0 +1,232 @@
+/* ============================ ESTILOS GLOBALES =========================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+body {
+  background: #0603b6;
+}
+
+#container {
+  display: block;
+  margin: 0px auto;
+  width: 90%;
+  box-shadow: 0px 0px 12px #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: auto;
+  background: #ffffff;
+}
+
+/* ============================ ESTILOS HEADER + NAV + MENU =================================== */
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  height: 100px;
+}
+
+.logo {
+  flex-grow: 1;
+  flex-basis: 65%;
+  margin-left: 20px;
+  color: #000000;
+  padding: 10px;
+  text-shadow: 1px 1px 0px #cccccc;
+  text-transform: uppercase;
+}
+.logo h1 {
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+#menu {
+  flex-grow: 1;
+  flex-basis: 30%;
+  height: 100%;
+  padding-right: 15px;
+}
+#menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+#menu a {
+  color: #000000;
+  text-transform: uppercase;
+  padding: 15px;
+  transition: all 300ms;
+}
+#menu a:hover {
+  background: #cccccc;
+  color: white;
+}
+
+/* ============================ ESTILOS CONTENEDO PRINCIPAL =================================== */
+#content-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#aside {
+  flex-basis: 17%;
+  padding: 15px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#aside h2 {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+  color: grey;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#aside ul li {
+  background: #eeeeee;
+  margin-top: 20px;
+}
+#aside ul a {
+  display: block;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+#aside ul a:hover {
+  color: white;
+  background: grey;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 80%;
+}
+#projects .project {
+  flex-grow: 1;
+  flex-basis: 250px;
+  margin-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+}
+#projects .project .img-wrap img {
+  width: 100%;
+}
+#projects .project .project-info {
+  padding: 10px;
+}
+#projects .project .project-info a {
+  font-size: 18px;
+  color: black;
+  transition: all 200ms;
+}
+#projects .project .project-info a:hover {
+  color: hotpink;
+}
+#projects .project .project-info p {
+  color: grey;
+}
+
+/* ====================================== FOOTER ===================================== */
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+}
+#footer .logo {
+  opacity: 0.5;
+  flex-basis: auto;
+  margin-left: 0px;
+  flex-grow: 1;
+}
+#footer p {
+  text-align: right;
+  margin-right: 30px;
+  flex-grow: 1;
+}
+#footer a {
+  color: blue;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1221px) {
+  #header .logo {
+    margin-left: 0px;
+    text-align: center;
+  }
+  #header #menu {
+    height: auto;
+  }
+  #header #menu ul {
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 630px) {
+  #content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #aside {
+    margin-right: 0px;
+  }
+  #aside ul {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 30px;
+  }
+
+  #projects {
+    flex-basis: 100%;
+  }
+  #projects .project {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+
+  #footer .logo {
+    text-align: center;
+    flex-basis: 100%;
+  }
+  #footer p {
+    text-align: center;
+    flex-basis: 100%;
+    margin-right: 0px;
+  }
+}
+/* Gestion de Ficheros Sass */
+
+/*# sourceMappingURL=styles.css.map */

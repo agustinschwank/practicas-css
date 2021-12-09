@@ -1,0 +1,60 @@
+@media (max-width:1221px) {
+    #header {
+
+        .logo {
+            margin-left: 0px;
+            text-align: center;
+        }
+
+        #menu {
+            height: auto;
+            
+            ul {
+                align-items: flex-start;
+                justify-content: space-between;
+                height: auto;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width:630px) {
+
+    #content-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #aside {
+        margin-right: 0px;
+
+        ul {
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 30px;
+        }
+    }
+
+    #projects {
+        flex-basis: 100%;
+
+        .project {
+            margin-left: 15px;
+            margin-right: 20px;
+        }
+    }
+
+    #footer {
+        .logo {
+            text-align: center;
+            flex-basis: 100%;
+        }
+
+        p {
+            text-align: center;
+            flex-basis: 100%;
+            margin-right: 0px;
+        }
+    }
+}

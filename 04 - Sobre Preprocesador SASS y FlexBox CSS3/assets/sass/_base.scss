@@ -1,0 +1,63 @@
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Variables es Sass */
+$color-text: lightblue;
+$rojo: red;
+$azul: blue;
+$verde: green;
+$salmon: salmon;
+
+/* Cajas */
+
+h1 {
+    color: $color-text;
+    text-shadow: 0px 0px 2px black;
+}
+
+#content {
+    /*
+    display: inline-flex;
+    flex-direction: column;
+    */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    border: 2px solid black;
+    padding: 10px;
+    background: #ffffff;
+    height: 500px;
+}
+
+.box {
+    /* flex-grow: 1; */
+    /* flex-basis: 40%;*/
+    margin: 10px;
+    padding: 50px;
+    border: 3px solid black;
+}
+
+.red {
+    background: $rojo;
+}
+
+.green {
+    background: $verde;
+}
+
+.blue {
+    
+    flex-basis: 100%;
+    background: $azul;
+}
+
+.salmon {
+    background: $salmon;
+}
