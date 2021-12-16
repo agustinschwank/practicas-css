@@ -1,0 +1,52 @@
+/* ============================ MAIN CONTENT =========================== */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: cornflowerblue;
+
+    .main-title {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin-top: 80px;
+        margin-bottom: 50px;
+
+        h1 {
+            text-align: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+    }
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card {
+        margin: 10px;
+        background: darkblue;
+        width: 500px;
+        display: flex;
+        flex-direction: column; 
+
+        .info {
+            padding: 20px;
+        }
+
+        p {
+            padding: 20px;
+        }
+    }
+}

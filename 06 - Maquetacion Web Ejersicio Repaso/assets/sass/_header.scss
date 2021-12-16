@@ -1,0 +1,60 @@
+/* ============================ ESTILOSHEADER + NAVEGATION =========================== */
+
+#header {
+    background: linear-gradient(to right, #08004e 50%, #680088 100%);
+    width: 100%;
+    height: 123px;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .navigation {
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            list-style: none;
+            
+            li {
+                margin: 0px auto;
+
+                a {
+                    text-decoration: none;
+                    padding: 20px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 800;
+                    transition: all 300ms;
+                }
+
+                a:hover {
+                    background: #736cb9;
+                }
+            }
+        }
+    }
+
+
+}
+

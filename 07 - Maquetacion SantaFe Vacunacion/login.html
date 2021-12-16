@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Santa Fe Vacunacion</title>
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"/>
+
+    </head>
+    <body>
+        <header id="header">
+            <img src="https://www.santafe.gob.ar/santafevacunacovid/assets/img/logo-santafe-blanco.png" alt="logo" title="SantaFe Vacuna"/>
+        </header>
+        <main id="main">
+            <div id="content">
+                <h1><a href="#">REGISTRO SANTA FE VACUNA</a></h1>
+
+                <!-- Inicio Panel de Logueo -->
+                <div id="form-content">
+                    <div class="info">
+                        <h2>Ingreso de Datos Personales</h2>
+                        <blockquote>
+                            <p>Para validar su identidad, debe ingresar los datos solicitados a continuación.</p>
+                            <p>Importante: El N° trámite que figura en el DNI debe ser del último ejemplar.</p>
+                        </blockquote>
+                    </div>
+                    <form id="formulario">
+                        <div class="first-sect">
+                            <input id="dni" name="dni" type="text" placeholder="DNI *"/>
+
+                            <select name="genero">
+                                <option  selected disabled>Selecione el Genero</option>
+                                <option value="1">Femenino</option>
+                                <option value="2">Masculino</option>
+                            </select>
+                        </div>
+
+                        <input id="tramite" name="tramite" type="text" placeholder="N° de tramite que figura en el DNI *"/>
+                        
+                        <!--
+                        <ul>
+                            <li>Consultá el número de trámite según la versión de tu DNI. Debe ser del último ejemplar
+                                <ul>
+                                    <li><img src="https://www.santafe.gob.ar/santafevacunacovid/assets/img/version-dni.jpg" alt="imagen"/></li>
+                                </ul>
+                            </li>
+                        </ul> -->
+
+                        <label for="cbox"><input id="cbox" name="chekbox" type="checkbox">
+                            <p>Ud. ha manifestado su voluntad para aplicarse la vacuna contra el COVID 19. Cuando comience la vacunación de su grupo poblacional se le otorgará el turno correspondiente.
+                                No es necesario realizar otra gestión, cuando sea programado su turno le será comunicado oportunamente por correo electrónico.
+                                Le solicitamos que verifique regularmente su casilla de correo electrónico; incluyendo su bandeja de correos no deseados y SPAM.</p>
+                        </label>
+
+                        <input name="submit" type="submit" value="Enviar"/>
+                    </form>
+                </div>
+                <!-- Fin Panel de Logueo -->
+            </div>
+        </main>
+    </body>
+</html>
