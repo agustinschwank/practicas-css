@@ -1,0 +1,118 @@
+/* NOTA: RECORDAR QUE TOMAMOS COMO EJEMPLO LA GRILLA DEL FREAMWORK: BOOTSTRAP */
+
+/* Responsive Design */
+
+@media (max-width: 1051px) {
+    #opener .video {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    #divisions {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+    .cards .card {
+        width: 230px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    #header {
+        flex-wrap: wrap;
+    }
+
+    #header .logo {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #menu {
+        flex-basis: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #menu ul {
+        justify-content: space-around;
+    }
+
+    #opener {
+        margin-top: 35px;
+    }
+
+    #opener h1 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+    }
+
+    #opener p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #opener .buttoms {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        margin: 5px;
+    }
+
+    #opener .video video {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards .card {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #divisions {
+        margin: 10px;
+    }
+
+    #divisions h1 {
+        font-size: 16px;
+    }
+
+    #divisions p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #socials {
+        height: 350px;
+    }
+
+    .social-box h2 {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .social-box .social-bottons a {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    #footer {
+        margin: 20px;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+}
+

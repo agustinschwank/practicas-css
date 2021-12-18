@@ -1,0 +1,26 @@
+/* ============================ ESTILOS GLOBALES =========================== */
+
+/* Fuentes */
+@font-face {
+    font-family: 'lightcase';
+    src: url('../fonts/lightcase.ttf');
+    src: url('../fonts/lightcase.ttf') format('truetype'),
+         url('../fonts/lightcase.eot') format('eot'),
+         url('../fonts/lightcase.woff') format('woff'),
+         url('../fonts/lightcase.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Ajustes Globales */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'lightcase';
+}
+
+.content {
+    margin: 0px auto;
+    max-width: 1200px;
+}
