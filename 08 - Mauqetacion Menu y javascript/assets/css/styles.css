@@ -1,0 +1,97 @@
+/* ========= ESTYLOS GLOBALES ========== */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* SETEAR UNA VARIABLE EN CSS */
+* {
+    --back_color: #f2f2f2;
+    --back_header: blue;
+}
+
+body {
+    background: var(--back_color);
+    font-family: Helvetica;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ========= HEADER STYLES ======== */
+.toggle {
+    background: blue;
+    padding: 20px;
+    color: white;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu, .submenu {
+    list-style: none;
+}
+
+.menu {
+    background: #555;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 500ms;
+}
+
+.menu__link {
+    display: block;
+    padding: 20px;
+}
+
+.menu__link:hover {
+    background: tomato;
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.submenu .menu__link {
+    background: #999;
+    padding-left: 50px;
+}
+
+.submenu .menu__link:hover {
+    background: lightpink;
+}
+
+.active {
+    margin-left: 0;
+}
+
+@media (min-width:1200px) {
+    .toggle {
+        display: none;
+    }
+    .menu {
+        margin-left: 0px;
+        display: flex;
+    }
+    .content-sub_menu {
+        position: relative;
+    }
+    .submenu {
+        position: absolute;
+        top: 68px;
+        width: 260px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .content-sub_menu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+}
